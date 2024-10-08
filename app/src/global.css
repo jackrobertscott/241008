@@ -1,6 +1,8 @@
 :root {
   --root-font-size: 16px;
   --root-font-height: 1.3rem;
+  --root-bg: hsl(0, 0%, 30%);
+  --shadow-thickness: 0.1rem;
 }
 
 html {

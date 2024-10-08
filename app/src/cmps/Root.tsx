@@ -1,13 +1,19 @@
 import {css} from "@emotion/css"
 import {cmp_cns} from "../utils/cmp_cns"
+import {Editor} from "./Editor"
 
 export function Root() {
-  return <div class={cns_r.outer}>Hello world!</div>
+  return (
+    <div class={cn_r.root}>
+      <Editor />
+    </div>
+  )
 }
 
-const cns_r = cmp_cns(Root.name, {
-  outer: css`
-    font-size: 100px;
-    color: red;
+const cn_r = cmp_cns(Root.name, {
+  root: css`
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--root-bg);
   `,
 })
